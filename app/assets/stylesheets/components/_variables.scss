@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+}
+
+body{
+  background:#A9A9A9 ;
+    /*#4F4C4A*/
+  color: #201F1E;
+  font-size: 22px;
+  font-family: 'Open Sans', sans-serif;
+}
+h1{
+  font-family: 'Montserrat', sans-serif;
+  color: #8C1500;
+  font-weight: 700;
+  font-size: 40px;
+}
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: #8C1500;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #201F1E;
+  font-size: 25px;
+  font-weight: 400;
+}
+a {
+  color: #7F7CAF;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #EEEEFF;
+}
+
+
+@media (max-width: 770px) {
+  .flexbox {
+    flex-direction: column;
+  }
+
+  .padding {
+    padding-left: 0px !important;
+  }
+
+  .flexbox {
+    flex-direction: column;
+    width: 100% !important;
+  }
+
+    .flexbox2 {
+    width: 100% !important;
+    flex-direction: column-reverse;
+  }
+
+  #contact i {
+    font-size: 20px !important;
+  }
+
+  .contact-card {
+    width: 100% !important;
+  }
+
+  .logobanner {
+    height:23vh;
+  }
+}
+
+@media (max-width: 580px) {
+  .navbar-tjd {
+    padding: 0px 5px !important;
+  }
+  .logobanner {
+    height:11vh;
+  }
+
+  #banner p {
+    font-size:15px !important;
+  }
+
+  .imgimgcard {
+    width:100%;
+  }
+  body {
+    font-size: 13px;
+  }
+
+  p {
+    font-size: 13px;
+    margin: 0 !important;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  #contact i {
+    font-size: 15px !important;
+  }
+
+  .contact-card img {
+    height: 120px !important;
+  }
+
+  .aboutmetext {
+    margin: 0 !important;
+    padding-left: 20px !important;
+  }
+
+  .aboutmepicture {
+    height: 136px !important;
+    margin: 15px 15px 15px 15px !important;
+  }
+
+  .flexbox {
+    width: 100% !important;
+    flex-direction: column;
+  }
+  .flexbox2 {
+    width: 100% !important;
+    flex-direction: column-reverse;
+  }
+
+  .navbar-tjd-item {
+    padding: 0px 5px !important;
+  }
+
+  .staticmap {
+    width:100%;
+  }
+
+  .textcardright {
+    margin-left:0px ;
+  }
+}

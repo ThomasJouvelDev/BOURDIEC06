@@ -3,7 +3,27 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>TODO</title>
+    <title>BOURDIEC 06 - Plombier / Couvreur / Zingueur </title>
+    <meta name="description" content="Une équipe et un savoir-faire à votre service depuis 1976 sur Menton, Roquebrune Cap Martin et environs. Interventions chez les particuliers et dans les copropriétés. Devis gratuit.">
+    <!-- Facebook card -->
+    <meta property="og:title" content="BOURDIEC 06 - Plombier / Couvreur / Zingueur">
+    <meta property="og:image" content="images/Banniere_bourdiec_06.png">
+    <meta property="og:description" content="Une équipe et un savoir-faire à votre service depuis 1976 sur Menton, Roquebrune Cap Martin et environs. Interventions chez les particuliers et dans les copropriétés. Devis gratuit.">
+    <meta property="og:site_name" content="Bourdiec06"/>
+    <!-- Twitter card -->
+<!--     <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@...">
+    <meta name="twitter:title" content="BOURDIEC 06 - Plombier / Couvreur / Zingueur">
+    <meta name="twitter:description" content="Une équipe et un savoir-faire à votre service depuis 1976 sur Menton, Roquebrune Cap Martin et environs.">
+    <meta name="twitter:creator" content="@...">
+    <meta name="twitter:image:src" content="images/Banniere_bourdiec_06.png"> -->
+    <!-- link  -->
+    <%= favicon_link_tag %>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700%7COpen+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/3ae22cffc7.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <%= csrf_meta_tags %>
     <%= action_cable_meta_tag %>
     <%= stylesheet_link_tag 'application', media: 'all' %>
@@ -13,6 +33,7 @@
     <%= render 'shared/navbar' %>
     <%= render 'shared/flashes' %>
     <%= yield %>
+    <%= render 'shared/footer' %>
     <%= javascript_include_tag 'application' %>
 
     <%= javascript_pack_tag 'application' %>
