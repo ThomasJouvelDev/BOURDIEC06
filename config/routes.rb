@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
   devise_for :users
-  root to: 'pages#home'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  scope "(:locale)", locale: /fr|en|it/ do
+    get 'services', to: 'pages#services', as: :services
+    get 'realisations', to: 'pages#realisations', as: :realisations
+    get 'nouscontacter', to: 'pages#nouscontacter', as: :contacts
+    get 'contact', to: 'contact#new', as: :contact
+    post 'contact', to: 'contact#create'
+    root to: 'pages#home'
+  end
 end

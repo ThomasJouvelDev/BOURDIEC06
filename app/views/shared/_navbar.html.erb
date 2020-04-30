@@ -5,11 +5,19 @@
       </a>
       <!-- Right Navigation -->
       <div class="navbar-tjd-right ">
+        <%= link_to t(:home), root_path, class:'navbar-tjd-item navbar-tjd-link' %>
+        <%= link_to t(:nosservices), services_path, class:'navbar-tjd-item navbar-tjd-link' %>
+        <%= link_to t(:nosrealisations), realisations_path, class:'navbar-tjd-item navbar-tjd-link' %>
+        <%= link_to t(:contact), contacts_path, class:'navbar-tjd-item navbar-tjd-link' %>
+        <%= link_to (image_tag "FR.png"), { :locale=>'fr' }, class:'navbar-tjd-item navbar-tjd-link' %>
+        <%= link_to (image_tag "GB.png"), { :locale=>'en' }%>
+        <%= link_to (image_tag "IT.png"), { :locale=>'it' }, class:'navbar-tjd-item navbar-tjd-link' %>
+<!--
         <a href="#banner" id="tobanner" class="navbar-tjd-item navbar-tjd-link">Accueil</a>
         <a href="#plomb" id="toplomb" class="navbar-tjd-item navbar-tjd-link">Plomberie</a>
         <a href="#toit" id="totoit" class="navbar-tjd-item navbar-tjd-link">Couverture</a>
         <a href="#zing" id="tozing" class="navbar-tjd-item navbar-tjd-link">Zinguerie</a>
-        <a href="#footer" id="tofooter" class="navbar-tjd-item navbar-tjd-link">Contact</a>
+        <a href="#footer" id="tofooter" class="navbar-tjd-item navbar-tjd-link">Contact</a> -->
       </div>
       <!-- Dropdown appearing on mobile only -->
       <div class="navbar-tjd-item hidden-md hidden-lg hidden-xs hidden-sm">
