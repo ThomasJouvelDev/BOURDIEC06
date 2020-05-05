@@ -1,0 +1,33 @@
+<%= simple_form_for(@contact) do |f| %>
+  <% if @contact.errors.any? %>
+    <div id="error_explanation">
+      <h3><%= pluralize(@contact.errors.count, "erreur") %> a empêchée votre message de s'envoyer : <% @contact.errors.full_messages.each do |msg| %>
+        <%= msg %>
+      <% end %></h3>
+    </div>
+  <% end %>
+
+<%= f.label :name, label: t(:votre_nom) %><br />
+  <div class="field">
+    <%= f.text_field :name, placeholder: t(:obligatoire) %>
+  </div>
+  <%= f.label :email, label: t(:votre_email) %><br />
+  <div class="field">
+    <%= f.text_field :email, placeholder: t(:obligatoire) %>
+  </div>
+    <%= f.label :tel, label: t(:votre_tel) %><br />
+  <div class="field">
+    <%= f.text_field :tel, placeholder: t(:optionel)%>
+  </div>
+  <%= f.label :message, label: 'Message ' %><br />
+  <div class="field">
+    <%= f.text_area :message, placeholder: t(:votre_message), class:'message' %>
+  </div>
+  <div class="captchadiv">
+    <%= recaptcha_tags %>
+  </div>
+  <div class="actions">
+    <%= f.submit t(:envoyer), class:"bouton btn btn-lg" %>
+  </div>
+<% end %>
+

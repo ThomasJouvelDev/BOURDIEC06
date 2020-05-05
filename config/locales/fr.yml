@@ -1,2 +1,15 @@
 fr:
   home: "Accueil"
+    # pied de pages
+  mentionslegales_link: 'Mentions légales'
+  pied: '© 2020 - Bourdiec 06 - Tous droits réservés - Thomas Jouvel Dev - '
+  PCZ: 'Plombier - Couvreur - Zingueur'
+    #Contact
+  contact_nous: "CONTACTEZ - NOUS"
+  votre_nom: "Votre nom"
+  votre_email: "Votre e-mail"
+  votre_tel: "Votre n° de téléphone"
+  envoyer: "Envoyer"
+  obligatoire: "Obligatoire"
+  optionel: "Optionnel"
+  votre_message: "Votre message..."

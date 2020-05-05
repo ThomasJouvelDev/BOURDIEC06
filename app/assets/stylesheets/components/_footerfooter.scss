@@ -1,0 +1,39 @@
+.footerbis {
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  padding: 0px 50px;
+  color: rgba(0,0,0,0.3);
+  @include sm {
+    padding:5px;
+  }
+}
+.footerbis-links {
+  display: flex;
+  align-items: center;
+}
+.footerbis-links a {
+  color: black;
+  opacity: 0.15;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 0px 10px;
+}
+.footerbis-links a:hover {
+  opacity: 1;
+}
+
+.mentions_link {
+  color: rgb(0,0,0);
+  opacity: 0.3;
+  text-decoration: underline;
+  // font-size: 24px;
+  padding: 0px 10px;
+  &:hover {
+    opacity:1;
+    text-decoration: none;
+    color: black;
+  }
+}

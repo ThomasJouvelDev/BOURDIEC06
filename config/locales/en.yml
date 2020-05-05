@@ -31,3 +31,15 @@
 
 en:
   home: "Homie"
+      # pied de pages
+  mentionslegales_link: 'Mentions légales'
+  pied: '© 2020 - Bourdiec 06 - All rights reserved - Thomas Jouvel Dev - '
+    #Contact
+  contact_nous: "CONTACT US"
+  votre_nom: "Your name"
+  votre_email: "Your email"
+  votre_tel: "Your phone number"
+  envoyer: "Send"
+  obligatoire: "Mandatory"
+  optionel: "Optional"
+  votre_message: "Your message..."

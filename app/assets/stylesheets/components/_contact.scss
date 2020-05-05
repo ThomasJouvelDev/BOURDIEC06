@@ -1,0 +1,70 @@
+
+.contact-info {
+  white-space: nowrap;
+  border-color:white;
+  color: white;
+  padding: 40px 100px 40px 100px;
+  margin: 0 20px 0 0;
+  border-style: solid;
+  border-width: 5px;
+  background-image: linear-gradient(-225deg, rgba(95, 95, 95, 0.5) 0%, rgba(0,0,0,0.6) 50%), url(asset_path("banniere.png"));
+  // background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.2)), url(asset_path("banniere.png"));
+  // background-color: white;
+  background-size: cover !important;
+
+  h1, h3 {
+    text-shadow: 0px 0px 1px white,0 0 1em white;
+  }
+
+  h3{
+    color: white;
+  }
+  @include md {
+    padding: 20px;
+    h1 {
+     font-size: 24px;
+    }
+    h5 {
+      font-size:14px;
+    }
+    h3 {
+      font-size:16px;
+    }
+  }
+}
+
+.contact-info-link  {
+  color: white;
+  text-decoration: none;
+}
+.contact-info-link:hover {
+  color:#C49991;
+}
+
+
+.field {
+  color:black;
+}
+
+.actions {
+  color:black;
+}
+
+.message {
+  width:350px;
+  height: 140px;
+  @include sm {
+    width: 270px;
+  }
+}
+
+.captchadiv {
+  width: 304px;
+  margin: 0 auto;
+}
+
+abbr, accronym {
+  border-bottom: 0px !important;
+  text-decoration: none !important;
+  color:transparent;
+}

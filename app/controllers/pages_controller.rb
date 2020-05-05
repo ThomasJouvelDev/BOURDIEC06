@@ -9,6 +9,7 @@ class PagesController < ApplicationController
   def services
   end
 
-  def nouscontacter
+
+  def mentionslegales
   end
 end
