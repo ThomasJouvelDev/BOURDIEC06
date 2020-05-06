@@ -13,8 +13,8 @@
 
 
 #footer a {
-  color: lightgrey;
-  font-size: 35px;
+  // color: lightgrey;
+  // font-size: 35px;
 }
 
 #footer img {
@@ -37,6 +37,9 @@
   }
 
 .staticmap {
+  min-height:40vh;
+  min-width: 250px;
+  flex-grow:1;
   border-style: solid;
   border-width: 5px;
   border-color:white;
