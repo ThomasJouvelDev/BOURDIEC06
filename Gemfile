@@ -16,6 +16,8 @@ gem 'simple_form'
 gem 'uglifier'
 gem 'webpacker'
 
+# projet
+gem 'leaflet-rails'
 gem "recaptcha"
 
 group :development do
