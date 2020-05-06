@@ -17,6 +17,9 @@
 .logobanner {
   height: 30vh;
   /*margin-top: 120px;*/
+  @include xl {
+    height:17vh;
+  }
  }
 
 #banner a {

@@ -1,0 +1,50 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  color:#8C1500;
+  text-decoration: none;
+  svg {
+    height: 55px;
+    width: 200px;
+    fill: none;
+    stroke-width: 5;
+
+    .o1 {
+      stroke: rgba(#AD5D4E, 1);
+      fill: white;
+      transition: all 1s ease-in-out;
+    }
+
+    .o2 {
+      stroke: white;
+      stroke-dasharray: 20 620;
+      stroke-dashoffset: 20;
+      transition: all 1s ease-in-out;
+    }
+  }
+
+  span {
+    position: absolute;
+    margin: auto 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 22px;
+  }
+
+  &:hover {
+    color:#8C1500;
+    .o1{
+      fill: rgba(#FFFFFF, 0.3);
+      stroke: rgba(#AD5D4E, 0.5);
+    }
+
+    .o2 {
+      stroke-dashoffset: -620;
+    }
+  }
+}
+
+input[type="submit"] { display: none !important;}

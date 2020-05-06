@@ -1,17 +1,29 @@
     <div class="navbar-tjd">
       <!-- Logo -->
-      <a href="#" class="navbar-tjd-brand hidden-xs hidden-sm">
+      <a href="#" class="navbar-tjd-brand hidden-sm">
         <%= image_tag "bourdiec06solo.png", alt:"logo"%>
       </a>
       <!-- Right Navigation -->
-      <div class="navbar-tjd-right ">
+      <div class="navbar-tjd-right hidden-xs ">
         <%= link_to t(:home), root_path, class:'navbar-tjd-item navbar-tjd-link' %>
         <%= link_to t(:nosservices), services_path, class:'navbar-tjd-item navbar-tjd-link' %>
         <%= link_to t(:nosrealisations), realisations_path, class:'navbar-tjd-item navbar-tjd-link' %>
         <%= link_to t(:contact), contacts_path, class:'navbar-tjd-item navbar-tjd-link' %>
-        <%= link_to (image_tag "FR.png"), { :locale=>'fr' }, class:'navbar-tjd-item navbar-tjd-link' %>
-        <%= link_to (image_tag "GB.png"), { :locale=>'en' }%>
-        <%= link_to (image_tag "IT.png"), { :locale=>'it' }, class:'navbar-tjd-item navbar-tjd-link' %>
+        <%= link_to (image_tag "FR.png"), { :locale=>'fr' }, class:'navbar-tjd-flag navbar-tjd-link' %>
+        <%= link_to (image_tag "GB.png"), { :locale=>'en' }, class:'navbar-tjd-flag navbar-tjd-link' %>
+        <%= link_to (image_tag "IT.png"), { :locale=>'it' }, class:'navbar-tjd-flag navbar-tjd-link' %>
+<!--
+        <a href="#banner" id="tobanner" class="navbar-tjd-item navbar-tjd-link">Accueil</a>
+        <a href="#plomb" id="toplomb" class="navbar-tjd-item navbar-tjd-link">Plomberie</a>
+        <a href="#toit" id="totoit" class="navbar-tjd-item navbar-tjd-link">Couverture</a>
+        <a href="#zing" id="tozing" class="navbar-tjd-item navbar-tjd-link">Zinguerie</a>
+        <a href="#footer" id="tofooter" class="navbar-tjd-item navbar-tjd-link">Contact</a> -->
+      </div>
+
+      <div class="navbar-tjd-right hidden-md hidden-lg hidden-sm ">
+        <%= link_to (image_tag "FR.png"), { :locale=>'fr' }, class:'navbar-tjd-flag navbar-tjd-link' %>
+        <%= link_to (image_tag "GB.png"), { :locale=>'en' }, class:'navbar-tjd-flag navbar-tjd-link' %>
+        <%= link_to (image_tag "IT.png"), { :locale=>'it' }, class:'navbar-tjd-flag navbar-tjd-link' %>
 <!--
         <a href="#banner" id="tobanner" class="navbar-tjd-item navbar-tjd-link">Accueil</a>
         <a href="#plomb" id="toplomb" class="navbar-tjd-item navbar-tjd-link">Plomberie</a>
@@ -20,15 +32,14 @@
         <a href="#footer" id="tofooter" class="navbar-tjd-item navbar-tjd-link">Contact</a> -->
       </div>
       <!-- Dropdown appearing on mobile only -->
-      <div class="navbar-tjd-item hidden-md hidden-lg hidden-xs hidden-sm">
+      <div class="navbar-tjd-item hidden-md hidden-lg hidden-sm">
         <div class="dropdown">
           <i class="fas fa-bars"class="avatar dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" alt="logo"></i>
           <ul class="dropdown-menu dropdown-menu-right navbar-tjd-dropdown-menu" aria-labelledby="dropdownMenu1" >
-            <li><a href="#banner" id="tobanner2" class="dropdown-item navbar-tjd-item navbar-tjd-link">Accueil</a></li>
-            <li><a href="#plomb" id="toplomb2" class="navbar-tjd-item navbar-tjd-link">Plomberie</a></li>
-            <li><a href="#toit" id="totoit2" class="navbar-tjd-item navbar-tjd-link">Couverture / Toiture</a></li>
-            <li><a href="#zing" id="tozing2" class="navbar-tjd-item navbar-tjd-link">Zinguerie</a></li>
-            <li><a href="#footer" id="tofooter2" class="navbar-tjd-item navbar-tjd-link">Contact</a></li>
+            <li><%= link_to t(:home), root_path, class:'navbar-tjd-item navbar-tjd-link' %></li>
+            <li><%= link_to t(:nosservices), services_path, class:'navbar-tjd-item navbar-tjd-link' %></li>
+            <li><%= link_to t(:nosrealisations), realisations_path, class:'navbar-tjd-item navbar-tjd-link' %></li>
+            <li> <%= link_to t(:contact), contacts_path, class:'navbar-tjd-item navbar-tjd-link' %></li>
           </ul>
         </div>
       </div>

@@ -1,8 +1,9 @@
 <%= simple_form_for(@contact) do |f| %>
   <% if @contact.errors.any? %>
     <div id="error_explanation">
-      <h3><%= pluralize(@contact.errors.count, "erreur") %> a empêchée votre message de s'envoyer : <% @contact.errors.full_messages.each do |msg| %>
+      <h3 style="color:white;"><%= pluralize(@contact.errors.count, "erreur") %> a empêchée votre message de s'envoyer : <% @contact.errors.full_messages.each do |msg| %>
         <%= msg %>
+        <br>
       <% end %></h3>
     </div>
   <% end %>
@@ -26,8 +27,19 @@
   <div class="captchadiv">
     <%= recaptcha_tags %>
   </div>
-  <div class="actions">
-    <%= f.submit t(:envoyer), class:"bouton btn btn-lg" %>
-  </div>
+
+  <label>
+    <input type="submit" />
+    <div class="button btn">
+      <span><%= t(:envoyer) %></span>
+      <svg>
+        <polyline class="o1" points="0 0, 200 0, 200 55, 0 55, 0 0"></polyline>
+        <polyline class="o2" points="0 0, 200 0, 200 55, 0 55, 0 0"></polyline>
+      </svg>
+
+    </div>
+  </label>
+
+
 <% end %>
 

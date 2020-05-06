@@ -3,10 +3,11 @@
   white-space: nowrap;
   border-color:white;
   color: white;
-  padding: 40px 100px 40px 100px;
+  padding: 40px 65px 40px 65px;
   margin: 0 20px 0 0;
   border-style: solid;
   border-width: 5px;
+  box-shadow: 3px 3px 13px 4px gray;
   background-image: linear-gradient(-225deg, rgba(95, 95, 95, 0.5) 0%, rgba(0,0,0,0.6) 50%), url(asset_path("banniere.png"));
   // background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.2)), url(asset_path("banniere.png"));
   // background-color: white;
