@@ -66,7 +66,7 @@ Rails.application.configure do
 
   config.action_mailer.perform_caching = false
   config.action_mailer.delivery_method = :postmark
-  config.action_mailer.postmark_settings = { :api_token => ENV['POSTMARK_API_TOKEN'] }
+  config.action_mailer.postmark_settings = { :api_token => '3c1714b2-9353-4947-ba03-768aa263810b' }
   config.action_mailer.default_url_options = { host: "bourdiec06.herokuapp.com/" }
 
   # Ignore bad email addresses and do not raise email delivery errors.
