@@ -56,7 +56,7 @@
 }
 
 .wrapper {
-  background-color: #FBFEF9;
+  background-color: #F1F1F1;
   color: #201F1E;
 }
 
@@ -67,11 +67,27 @@
   margin: 40px 0 40px 0;
 }
 
+.miniflexbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
 .flexbox2 {
   display:flex;
   justify-content: space-between;
   align-items: center;
   margin: 40px 0 40px 0;
+}
+
+.chantierflex {
+  display:flex;
+  align-items: center;
+  margin: 40px 0 40px 0;
+  box-shadow: 3px 3px 13px 4px gray;
+  border-radius:10px;
+  background-color:#F1F1F1;
 }
 
 .flexbox3 {
@@ -86,6 +102,10 @@
   width: 560px;
   border-radius:10px;
   box-shadow: 1px 1px 4px #4F4C4A;
+}
+
+.textcard {
+  padding-right: 50px;
 }
 
 .textcardright {

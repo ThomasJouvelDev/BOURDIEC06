@@ -9,7 +9,7 @@
   <div class="container" id="plomb">
     <div class="flexbox">
       <div class="textcard">
-        <h1>PLOMBERIE</h1>
+        <h2><%= t(:plomberie) %></h2>
         <p><ul>
           <li>Recherche de fuite</li>
           <li>Dépannage, débouchage</li>
@@ -20,6 +20,7 @@
         </ul></p>
       </div>
       <div class="imgcard">
+        <%= cl_image_tag("Bourdiec06/plomberie.jpg", alt:"plomberie travaux", class:"imgimgcard") %>
       </div>
     </div>
   </div>
@@ -27,10 +28,10 @@
 <div class="container" id="toit">
   <div class="flexbox2">
     <div class="imgcard">
-      <%= image_tag "toiture3.jpg", alt:"toiture neuve Menton", class:"imgimgcard" %>
+      <%= cl_image_tag("Bourdiec06/toiture3", alt:"toiture neuve Menton", class:"imgimgcard") %>
     </div>
     <div class="textcardright">
-      <h1>COUVERTURE & TOITURE</h1>
+      <h2><%= t(:couverture) %></h2>
       <p><ul>
         <li>Réfection de toitures en tuiles plates, romanes ou canal</li>
         <li>Recherche de fuite</li>
@@ -46,7 +47,7 @@
   <div class="container" id="zing">
     <div class="flexbox">
       <div class="textcard">
-        <h1>ZINGUERIE</h1>
+        <h2><%= t(:zinguerie) %></h2>
         <p><ul>
           <li>Intervention en urgence sur zinguerie</li>
           <li>Réalisation de tous travaux en zinc et en plomb</li>
@@ -56,7 +57,7 @@
         </ul></p>
       </div>
       <div class="imgcard">
-
+        <%= cl_image_tag("Bourdiec06/zinguerie", alt:"zinguerie", class:"imgimgcard") %>
       </div>
     </div>
   </div>

@@ -1,10 +1,15 @@
 fr:
+  #Navbar et bouttons
   home: "Accueil"
-    # pied de pages
+  nosservices: "Nos Services"
+  nosrealisations: "Nos Réalisations"
+  contact: "Contact"
+  photos: "voir les Photos"
+  # pied de pages
   mentionslegales_link: 'Mentions légales'
-  pied: '© 2020 - Bourdiec 06 - Tous droits réservés - Thomas Jouvel Dev - '
+  pied: '© 2020 - BOURDIEC 06 - Tous droits réservés - Thomas Jouvel Dev - '
   PCZ: 'Plombier - Couvreur - Zingueur'
-    #Contact
+  #Contact
   contact_nous: "CONTACTEZ - NOUS"
   votre_nom: "Votre nom"
   votre_email: "Votre e-mail"
@@ -13,3 +18,7 @@ fr:
   obligatoire: "Obligatoire"
   optionel: "Optionnel"
   votre_message: "Votre message..."
+  #Catégories
+  plomberie: "PLOMBERIE"
+  couverture: "COUVERTURE & TOITURE"
+  zinguerie: "ZINGUERIE"

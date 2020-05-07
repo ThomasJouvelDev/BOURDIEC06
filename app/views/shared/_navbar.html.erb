@@ -1,8 +1,6 @@
     <div class="navbar-tjd">
       <!-- Logo -->
-      <a href="#" class="navbar-tjd-brand hidden-sm">
-        <%= image_tag "bourdiec06solo.png", alt:"logo"%>
-      </a>
+        <%= link_to (image_tag "bourdiec06solo.png", alt:"logo", class:'logonav'), root_path, class:"navbar-tjd-brand hidden-sm" %>
       <!-- Right Navigation -->
       <div class="navbar-tjd-right hidden-xs ">
         <%= link_to t(:home), root_path, class:'navbar-tjd-item navbar-tjd-link' %>
@@ -12,24 +10,12 @@
         <%= link_to (image_tag "FR.png"), { :locale=>'fr' }, class:'navbar-tjd-flag navbar-tjd-link' %>
         <%= link_to (image_tag "GB.png"), { :locale=>'en' }, class:'navbar-tjd-flag navbar-tjd-link' %>
         <%= link_to (image_tag "IT.png"), { :locale=>'it' }, class:'navbar-tjd-flag navbar-tjd-link' %>
-<!--
-        <a href="#banner" id="tobanner" class="navbar-tjd-item navbar-tjd-link">Accueil</a>
-        <a href="#plomb" id="toplomb" class="navbar-tjd-item navbar-tjd-link">Plomberie</a>
-        <a href="#toit" id="totoit" class="navbar-tjd-item navbar-tjd-link">Couverture</a>
-        <a href="#zing" id="tozing" class="navbar-tjd-item navbar-tjd-link">Zinguerie</a>
-        <a href="#footer" id="tofooter" class="navbar-tjd-item navbar-tjd-link">Contact</a> -->
       </div>
 
       <div class="navbar-tjd-right hidden-md hidden-lg hidden-sm ">
         <%= link_to (image_tag "FR.png"), { :locale=>'fr' }, class:'navbar-tjd-flag navbar-tjd-link' %>
         <%= link_to (image_tag "GB.png"), { :locale=>'en' }, class:'navbar-tjd-flag navbar-tjd-link' %>
         <%= link_to (image_tag "IT.png"), { :locale=>'it' }, class:'navbar-tjd-flag navbar-tjd-link' %>
-<!--
-        <a href="#banner" id="tobanner" class="navbar-tjd-item navbar-tjd-link">Accueil</a>
-        <a href="#plomb" id="toplomb" class="navbar-tjd-item navbar-tjd-link">Plomberie</a>
-        <a href="#toit" id="totoit" class="navbar-tjd-item navbar-tjd-link">Couverture</a>
-        <a href="#zing" id="tozing" class="navbar-tjd-item navbar-tjd-link">Zinguerie</a>
-        <a href="#footer" id="tofooter" class="navbar-tjd-item navbar-tjd-link">Contact</a> -->
       </div>
       <!-- Dropdown appearing on mobile only -->
       <div class="navbar-tjd-item hidden-md hidden-lg hidden-sm">
@@ -48,43 +34,3 @@
 
 
 
-
-
-
-
-<!-- <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-  <%= link_to "#", class: "navbar-brand" do %>
-    <%= image_tag "https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/logo.png" %>
-    <% end %>
-
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <% if user_signed_in? %>
-        <li class="nav-item active">
-          <%= link_to "Home", "#", class: "nav-link" %>
-        </li>
-        <li class="nav-item">
-          <%= link_to "Messages", "#", class: "nav-link" %>
-        </li>
-        <li class="nav-item dropdown">
-          <%= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
-          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-            <%= link_to "Action", "#", class: "dropdown-item" %>
-            <%= link_to "Another action", "#", class: "dropdown-item" %>
-            <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
-          </div>
-        </li>
-      <% else %>
-        <li class="nav-item">
-          <%= link_to "Login", new_user_session_path, class: "nav-link" %>
-        </li>
-      <% end %>
-    </ul>
-  </div>
-</div>
- -->

@@ -1,4 +1,7 @@
 /* Main navbar */
+.navspace {
+  height:50px;
+}
 .navbar-tjd {
   box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
   background: #FBFEF9;
@@ -31,7 +34,7 @@
   // flex-grow:1;
 }
 
-.navbar-tjd-brand img {
+.logonav {
   height: 55px;
   @include sm {
     height: 30px;

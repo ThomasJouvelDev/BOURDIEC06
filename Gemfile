@@ -20,6 +20,7 @@ gem 'webpacker'
 gem 'leaflet-rails'
 gem "recaptcha"
 gem 'rails-i18n'
+gem 'cloudinary'
 
 group :development do
   gem 'web-console', '>= 3.3.0'

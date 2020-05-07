@@ -38,37 +38,3 @@ $screen-xl-min: 1024px;
    }
 }
 
-h1 {
-  @include sm  {
-  font-size: 30px;
-  }
-}
-
-h2 {
-  @include sm  {
-  font-size: 24px;
-  }
-}
-
-h3 {
-  @include md  {
-  font-size: 20px;
-  }
-}
-
-h4 {
-  @include md  {
-  font-size: 19px;
-  }
-}
-
-
-body {
-  @include sm {
-    font-size: 12px;
-  }
-
-  @include md {
-    font-size: 16px;
-  }
-}

@@ -1,1 +1,97 @@
-services.html.erb
+<div class="navspace"></div>
+<div class="container">
+  <h1><%= t(:nosservices) %></h1>
+</div>
+<div class="wrapper">
+  <div class="container">
+    <br>
+    <h2><%= t(:plomberie) %></h2>
+    <div class="flexbox">
+      <div class="textcard">
+        <h3>Notre Savoir-Faire:</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, vero aliquam repudiandae labore dignissimos aut consectetur nemo. Accusantium porro alias deleniti sunt animi sequi, eius, nam totam molestiae perferendis iste.</p>
+        <br>
+        <h3>Nos Services:</h3>
+        <p><ul>
+          <li>Recherche de fuite</li>
+          <li>Dépannage, débouchage</li>
+          <li>Réparation et rénovation de salle de bains, sanitaires et cuisines</li>
+          <li>Remplacement de cumulus</li>
+          <li>Réparation et réfection de canalisation d’eau enterrée, encastrée ou en façade</li>
+          <li>Mise aux normes et remplacement de fosse septique</li>
+        </ul></p>
+      </div>
+      <div class="miniflexbox">
+        <%= cl_image_tag("Bourdiec06/plomberie.jpg", alt:"plomberie travaux", class:"imgimgcard", style:"width:50vh;") %>
+        <%= link_to realisations_path, class:"button2 btn" do %>
+          <span><%= t(:photos) %></span>
+          <svg>
+            <polyline class="o1" points="0 0, 300 0, 300 55, 0 55, 0 0"></polyline>
+            <polyline class="o2" points="0 0, 300 0, 300 55, 0 55, 0 0"></polyline>
+          </svg>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <br>
+  <h2><%= t(:couverture) %></h2>
+  <div class="flexbox">
+    <div class="textcard">
+      <h3>Notre Savoir-Faire:</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, vero aliquam repudiandae labore dignissimos aut consectetur nemo. Accusantium porro alias deleniti sunt animi sequi, eius, nam totam molestiae perferendis iste.</p>
+      <br>
+      <h3>Nos Services:</h3>
+      <p><ul>
+        <li>Réfection de toitures en tuiles plates, romanes ou canal</li>
+        <li>Recherche de fuite</li>
+        <li>Intervention pour réparation en urgence</li>
+        <li>Pose de Velux</li>
+        <li>Pose d’isolation sous-toiture ou en comble</li>
+        <li>Entretien, contrôle et nettoyage annuel de toiture</li>
+      </ul></p>
+    </div>
+      <div class="miniflexbox">
+        <%= cl_image_tag("Bourdiec06/toiture2.jpg", alt:"toiture travaux", class:"imgimgcard", style:"width:50vh;") %>
+        <%= link_to realisations_path, class:"button2 btn" do %>
+          <span><%= t(:photos) %></span>
+          <svg>
+            <polyline class="o1" points="0 0, 300 0, 300 55, 0 55, 0 0"></polyline>
+            <polyline class="o2" points="0 0, 300 0, 300 55, 0 55, 0 0"></polyline>
+          </svg>
+        <% end %>
+      </div>
+  </div>
+</div>
+<div class="wrapper">
+  <div class="container">
+    <br>
+    <h2><%= t(:zinguerie) %></h2>
+    <div class="flexbox">
+      <div class="textcard">
+        <h3>Notre Savoir-Faire:</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, vero aliquam repudiandae labore dignissimos aut consectetur nemo. Accusantium porro alias deleniti sunt animi sequi, eius, nam totam molestiae perferendis iste.</p>
+        <br>
+        <h3>Nos Services:</h3>
+        <p><ul>
+          <li>Intervention en urgence sur zinguerie</li>
+          <li>Réalisation de tous travaux en zinc et en plomb</li>
+          <li>Réfection de gouttière, d'abergement de cheminée, de chéneau et de terrassons</li>
+          <li>Réalisation de solin avec engravure, de noquet</li>
+          <li>Fourniture et pose de piques anti-volatiles</li>
+        </ul></p>
+      </div>
+      <div class="miniflexbox">
+        <%= cl_image_tag("Bourdiec06/banniere.jpg", alt:"zinguerie travaux", class:"imgimgcard", style:"width:50vh;") %>
+        <%= link_to realisations_path, class:"button2 btn" do %>
+          <span><%= t(:photos) %></span>
+          <svg>
+            <polyline class="o1" points="0 0, 300 0, 300 55, 0 55, 0 0"></polyline>
+            <polyline class="o2" points="0 0, 300 0, 300 55, 0 55, 0 0"></polyline>
+          </svg>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
