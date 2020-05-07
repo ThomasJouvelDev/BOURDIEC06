@@ -21,6 +21,9 @@ gem 'leaflet-rails'
 gem "recaptcha"
 gem 'rails-i18n'
 gem 'cloudinary'
+gem 'coffee-rails'
+gem 'lightbox-bootstrap-rails'
+gem 'popper_js'
 
 group :development do
   gem 'web-console', '>= 3.3.0'

@@ -9,7 +9,7 @@
         <h3>Chantier 1</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus illum corrupti animi in, temporibus earum nisi quia possimus voluptate, iure sed perspiciatis cumque accusantium quidem facere, molestiae autem modi magni!</p>
         <br>
-        <%= link_to realisations_path, class:"button2 btn" do %>
+        <%= link_to "https://res.cloudinary.com/ddeqhkybg/image/upload/v1588856126/Bourdiec06/zinguerie.jpg", class:'button2 btn', data: { toggle: 'lightbox', gallery: 'chantier1'} do %>
           <span><%= t(:photos) %></span>
           <svg>
             <polyline class="o1" points="0 0, 300 0, 300 55, 0 55, 0 0"></polyline>
@@ -18,16 +18,20 @@
         <% end %>
         <br>
       </div>
-      <%= cl_image_tag("Bourdiec06/toiture3", alt:"toiture neuve Menton", class:"imgimgcard") %>
+      <%= link_to "https://res.cloudinary.com/ddeqhkybg/image/upload/v1588856126/Bourdiec06/toiture3.jpg", data: { toggle: 'lightbox', gallery: 'chantier1'} do %>
+        <%= cl_image_tag("Bourdiec06/toiture3", alt:"toiture neuve Menton", class:"imgimgcard") %>
+      <% end %>
     </div>
     <br>
     <div class="flexbox2">
+      <%= link_to "https://res.cloudinary.com/ddeqhkybg/image/upload/v1588856126/Bourdiec06/toiture2.jpg", data: { toggle: 'lightbox', gallery: 'chantier2'} do %>
       <%= cl_image_tag("Bourdiec06/toiture2", alt:"toiture neuve Menton", class:"imgimgcard") %>
+      <% end %>
       <div class="textcardright">
         <h3>Chantier 2</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium praesentium expedita similique explicabo voluptatem quam eum beatae molestias ea perspiciatis labore, fuga temporibus odit vero tempore quae debitis dicta quaerat?</p>
         <br>
-        <%= link_to realisations_path, class:"button2 btn" do %>
+        <%= link_to "https://res.cloudinary.com/ddeqhkybg/image/upload/v1588856126/Bourdiec06/zinguerie.jpg", class:'button2 btn', data: { toggle: 'lightbox', gallery: 'chantier2'} do %>
           <span><%= t(:photos) %></span>
           <svg>
             <polyline class="o1" points="0 0, 300 0, 300 55, 0 55, 0 0"></polyline>
@@ -43,7 +47,9 @@
   <br>
   <h2 style="text-align: center;"><%= t(:plomberie) %></h2>
   <div class="chantierflex">
-    <%= cl_image_tag("Bourdiec06/plomberie", alt:"travaux de plomberie", class:"imgimgcard") %>
+    <%= link_to "https://res.cloudinary.com/ddeqhkybg/image/upload/v1588856126/Bourdiec06/plomberie.jpg", data: { toggle: 'lightbox', gallery: 'chantier1plomberie'} do %>
+      <%= cl_image_tag("Bourdiec06/plomberie", alt:"travaux de plomberie", class:"imgimgcard") %>
+      <% end %>
     <div class='miniflexbox'>
       <div class="textcardright">
         <br>
@@ -57,7 +63,7 @@
           </ul>
         </p>
       </div>
-      <%= link_to realisations_path, class:"button2 btn" do %>
+      <%= link_to "https://res.cloudinary.com/ddeqhkybg/image/upload/v1588856126/Bourdiec06/plomberie.jpg", class:"button2 btn", data: { toggle: 'lightbox', gallery: 'chantier1plomberie'} do %>
         <span><%= t(:photos) %></span>
         <svg>
           <polyline class="o1" points="0 0, 300 0, 300 55, 0 55, 0 0"></polyline>
@@ -72,7 +78,9 @@
     <br>
     <h2 style="text-align: center;"><%= t(:couverture) %></h2>
     <div class="chantierflex" style="background-color:#A9A9A9; ">
-      <%= cl_image_tag("Bourdiec06/banniere", alt:"travaux de toiture", class:"imgimgcard") %>
+      <%= link_to "https://res.cloudinary.com/ddeqhkybg/image/upload/v1588856152/Bourdiec06/banniere.png", data: { toggle: 'lightbox', gallery: 'chantier1toiture'} do %>
+        <%= cl_image_tag("Bourdiec06/banniere", alt:"travaux de toiture", class:"imgimgcard") %>
+      <% end %>
       <div class='miniflexbox'>
         <div class="textcardright">
           <br>
@@ -86,7 +94,7 @@
             </ul>
           </p>
         </div>
-        <%= link_to realisations_path, class:"button2 btn" do %>
+         <%= link_to "https://res.cloudinary.com/ddeqhkybg/image/upload/v1588856141/Bourdiec06/toiture3.jpg", class:"button2 btn", data: { toggle: 'lightbox', gallery: 'chantier1toiture'} do %>
           <span><%= t(:photos) %></span>
           <svg>
             <polyline class="o1" points="0 0, 300 0, 300 55, 0 55, 0 0"></polyline>
@@ -96,7 +104,9 @@
       </div>
     </div>
     <div class="chantierflex" style="background-color:#A9A9A9; ">
+      <%= link_to "https://res.cloudinary.com/ddeqhkybg/image/upload/v1588856141/Bourdiec06/toiture2.jpg", data: { toggle: 'lightbox', gallery: 'chantier2toiture'} do %>
       <%= cl_image_tag("Bourdiec06/toiture2", alt:"travaux de toiture", class:"imgimgcard") %>
+      <% end %>
       <div class='miniflexbox'>
         <div class="textcardright">
           <br>
@@ -110,7 +120,7 @@
             </ul>
           </p>
         </div>
-        <%= link_to realisations_path, class:"button2 btn" do %>
+          <%= link_to "https://res.cloudinary.com/ddeqhkybg/image/upload/v1588856141/Bourdiec06/toiture3.jpg", class:"button2 btn", data: { toggle: 'lightbox', gallery: 'chantier2toiture'} do %>
           <span><%= t(:photos) %></span>
           <svg>
             <polyline class="o1" points="0 0, 300 0, 300 55, 0 55, 0 0"></polyline>
@@ -125,7 +135,9 @@
   <br>
   <h2 style="text-align: center;"><%= t(:zinguerie) %></h2>
   <div class="chantierflex">
+    <%= link_to "https://res.cloudinary.com/ddeqhkybg/image/upload/v1588856141/Bourdiec06/zinguerie.jpg", data: { toggle: 'lightbox', gallery: 'chantier1zing'} do %>
     <%= cl_image_tag("Bourdiec06/zinguerie", alt:"travaux de zinguerie", class:"imgimgcard") %>
+    <% end %>
     <div class='miniflexbox'>
       <div class="textcardright">
         <br>
@@ -139,7 +151,7 @@
           </ul>
         </p>
       </div>
-      <%= link_to realisations_path, class:"button2 btn" do %>
+      <%= link_to "https://res.cloudinary.com/ddeqhkybg/image/upload/v1588856141/Bourdiec06/banniere.png", class:"button2 btn", data: { toggle: 'lightbox', gallery: 'chantier1zing'} do %>
         <span><%= t(:photos) %></span>
         <svg>
           <polyline class="o1" points="0 0, 300 0, 300 55, 0 55, 0 0"></polyline>
@@ -149,7 +161,9 @@
     </div>
   </div>
   <div class="chantierflex">
+    <%= link_to "https://res.cloudinary.com/ddeqhkybg/image/upload/v1588856141/Bourdiec06/toiture3.jpg", data: { toggle: 'lightbox', gallery: 'chantier2zing'} do %>
     <%= cl_image_tag("Bourdiec06/toiture3", alt:"travaux de zinguerie", class:"imgimgcard") %>
+    <% end %>
     <div class='miniflexbox'>
       <div class="textcardright">
         <br>
@@ -163,7 +177,7 @@
           </ul>
         </p>
       </div>
-      <%= link_to realisations_path, class:"button2 btn" do %>
+      <%= link_to "https://res.cloudinary.com/ddeqhkybg/image/upload/v1588856141/Bourdiec06/banniere.png", class:"button2 btn", data: { toggle: 'lightbox', gallery: 'chantier2zing'} do %>
         <span><%= t(:photos) %></span>
         <svg>
           <polyline class="o1" points="0 0, 300 0, 300 55, 0 55, 0 0"></polyline>
@@ -178,4 +192,26 @@
     <p></p>
     <br>
   </div>
+</div>
+
+<div hidden>
+  <!-- Chantier de ref 1  -->
+  <a href="https://res.cloudinary.com/ddeqhkybg/image/upload/v1588856137/Bourdiec06/toiture2.jpg" data-gallery="chantier1" data-toggle='lightbox'></a>
+  <a href="https://res.cloudinary.com/ddeqhkybg/image/upload/v1588856152/Bourdiec06/banniere.png" data-gallery="chantier1" data-toggle='lightbox'></a>
+  <!-- Chantier de ref 2  -->
+  <a href="https://res.cloudinary.com/ddeqhkybg/image/upload/v1588856141/Bourdiec06/toiture3.jpg" data-gallery="chantier2" data-toggle='lightbox'></a>
+  <a href="https://res.cloudinary.com/ddeqhkybg/image/upload/v1588856152/Bourdiec06/banniere.png" data-gallery="chantier2" data-toggle='lightbox'></a>
+  <!-- Plomberie Chantier 1  -->
+  <a href="https://res.cloudinary.com/ddeqhkybg/image/upload/v1588856126/Bourdiec06/plomberie.jpg" data-gallery="chantier1plomberie" data-toggle='lightbox'></a>
+  <a href="https://res.cloudinary.com/ddeqhkybg/image/upload/v1588856126/Bourdiec06/plomberie.jpg" data-gallery="chantier1plomberie" data-toggle='lightbox'></a>
+  <!-- Toiture Chantier 1  -->
+  <a href="https://res.cloudinary.com/ddeqhkybg/image/upload/v1588856137/Bourdiec06/toiture2.jpg" data-gallery="chantier1toiture" data-toggle='lightbox'></a>
+  <a href="https://res.cloudinary.com/ddeqhkybg/image/upload/v1588856116/Bourdiec06/zinguerie.jpg" data-gallery="chantier1toiture" data-toggle='lightbox'></a>
+  <!-- Toiture Chantier 2  -->
+  <a href="https://res.cloudinary.com/ddeqhkybg/image/upload/v1588856137/Bourdiec06/toiture2.jpg" data-gallery="chantier2toiture" data-toggle='lightbox'></a>
+  <a href="https://res.cloudinary.com/ddeqhkybg/image/upload/v1588856116/Bourdiec06/zinguerie.jpg" data-gallery="chantier2toiture" data-toggle='lightbox'></a>
+  <!-- Zinguerie Chantier 1  -->
+  <a href="https://res.cloudinary.com/ddeqhkybg/image/upload/v1588856141/Bourdiec06/toiture3.jpg" data-gallery="chantier1zing" data-toggle='lightbox'></a>
+  <!-- Zinguerie Chantier 2  -->
+  <a href="https://res.cloudinary.com/ddeqhkybg/image/upload/v1588856116/Bourdiec06/zinguerie.jpg" data-gallery="chantier2zing" data-toggle='lightbox'></a>
 </div>
