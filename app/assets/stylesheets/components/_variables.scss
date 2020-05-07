@@ -92,6 +92,19 @@ a:hover {
   }
 }
 
+@media (min-height: 1300px) {
+
+  .flexbox {
+    flex-direction: column;
+    width: 100% !important;
+  }
+
+  .flexbox2 {
+    flex-direction: column-reverse;
+    width: 100% !important;
+  }
+}
+
 @media (max-width: 580px) {
   .navbar-tjd {
     padding: 0px 5px !important;
@@ -159,14 +172,21 @@ a:hover {
     width:100%;
   }
 
+  .textcard {
+    padding-right:0;
+  }
   .textcardright {
     margin-left:0px ;
+  }
+
+  .button2 {
+    margin:20px 0;
   }
 }
 
 h1 {
   @include sm  {
-  font-size: 30px;
+  font-size: 30px !important;
   }
 }
 
