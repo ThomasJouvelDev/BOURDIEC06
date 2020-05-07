@@ -1,0 +1,10 @@
+<h1>Vous avez un message de la part de : <%= @contact.name %> </h1>
+
+<p><%= simple_format(@contact.message) %></p>
+
+<h3>
+  <ul>
+    <li>e-mail : <%= @contact.email %></li>
+    <li>tel : <%= @contact.tel %></li>
+  </ul>
+</h3>

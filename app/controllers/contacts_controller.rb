@@ -11,6 +11,7 @@ class ContactsController < ApplicationController
       ContactMailer.general_message(@contact).deliver_now
       render :thanks
     else
+      flash[:alert] = I18n.t 'errors.template.body'
       render :new
     end
   end
@@ -18,33 +19,9 @@ class ContactsController < ApplicationController
   def thanks
   end
 
-  def new_produit
-    @article = Article.find(params[:id])
-    @contact = Contact.new
-  end
-
-  def create_produit
-    @article = Article.find(params[:id])
-    @contact = Contact.new(contact_produit_params)
-
-    if @contact.save
-      ContactMailer.produit_message(@contact, @article).deliver_now
-      render :thanks_produit
-    else
-      render :new_produit
-    end
-  end
-
-  def thanks_produit
-  end
-
 private
 
   def contact_params
-    params.require(:contact).permit(:email, :message, :name, :tel)
-  end
-
-  def contact_produit_params
     params.require(:contact).permit(:email, :message, :name, :tel)
   end
 end
